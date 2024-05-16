@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevent Default</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tell us about your cat 🐱</h1>
+    <form action="/shelter" id="wallofFameForm">
+        <p id="error" style="display: none;">😾 Please enter a cat name!</p>
+        <label style="display: block; padding-bottom: 12px;" for="catName">Cat name
+            <input style="display:block;" type="text" id="catName" />
+        </label>
+
+        <label for="description" style="display: block; padding-bottom: 12px;" id="description">Tell us more about your
+            cat (optional) <textarea style="display:block;" id="description" cols="48" rows="8"></textarea></label>
+
+        <button id="submit">Submit</button>
+
+    </form>
+
+    <div id="wallOfFame">
+        <h2>Cat Wall of Fame</h2>
+        <p id="wallEmpty" style="display: block;">There are no cats here to speak of yet. 😿</p>
+        <ul id="list"></ul>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,160 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #e8f0ff;
+  font-family: monospace;
+  margin: 64px;
+  font-size: 20px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+li > p {
+  margin: 0px;
+  color: #404040;
+  text-align: left;
+}
+
+li {
+  padding-bottom: 16px;
+}
+
+form,
+input[type="text"],
+textarea,
+button {
+  font-size: 1em;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+input[type="text"],
+textarea {
+  height: auto;
+  border: none;
+  border: 1px solid #e3e3e3;
+}
+
+#wallofFameForm {
+  box-sizing: border-box;
+  max-width: 648px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #d8e6ff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+}
+
+#wallofFameForm input,
+#wallofFameForm textarea,
+button {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+  font-family: monospace;
+  border-radius: 60px;
+  padding: 8px 16px 8px 16px;
+}
+
+button:hover {
+  opacity: 80%;
+  animation-name: wavy2;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#wallofFameForm button {
+  border: none;
+  background-color: #4658ff;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#delete {
+  display: block;
+  padding: 8px 16px 8px 16px;
+  border: none;
+  background-color: #e8f0ff00;
+  color: #4659ff96;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#list {
+  margin: 0;
+  padding: 0;
+}
+
+#newLi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 16px auto;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 12px;
+  list-style-type: none;
+  text-align: left;
+  max-width: 600px;
+}
+
+#error {
+  letter-spacing: 3px;
+  /* background-color: #ffdede; */
+  background-color: #b85151;
+  color: #ffdede;
+  /* color: #d16868; */
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 1.2em;
+  margin-top: 8px;
+}
+
+.shake {
+  animation-name: wavy;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -8px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes wavy2 {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: 0px;
+  }
+}
